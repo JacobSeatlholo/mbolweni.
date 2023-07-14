@@ -54,6 +54,10 @@ module.exports = {
       backgroundImage: (theme) => ({
         background: "url('/bg.png')",
       }),
+      fontFamily: {
+        opensans: ["Open Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
