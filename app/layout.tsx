@@ -11,7 +11,7 @@ const font = Geologica({
 
 export const metadata: Metadata = {
   title: "Uber Eats",
-  description: "Food Delivery and Takeout made with Next.js",
+  description: "Uber Eats | Food Delivery and Takeout made with Next.js",
 };
 
 export default function RootLayout({
