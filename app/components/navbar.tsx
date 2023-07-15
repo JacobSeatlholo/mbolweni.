@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./button";
+import Button from "@/components/ui/button";
 import { User2, AlignJustify } from "lucide-react";
 
 const NavBar = () => {

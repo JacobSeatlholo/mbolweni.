@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import ModalProvider from "@/providers/modal-provider";
 
 export const metadata: Metadata = {
   title: "Uber Eats",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ModalProvider />
         <NavBar />
         {children}
         <Footer />

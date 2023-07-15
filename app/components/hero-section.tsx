@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Button from "./button";
+import Button from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
                 <SelectItem value="dark">
                   <div className="flex ">
-                    <CalendarCheck size={20} />{" "}
+                    <CalendarCheck size={20} />
                     <p className="pl-1 min-w-fit text-[14px] font-semibold">
                       Schedule for later
                     </p>
