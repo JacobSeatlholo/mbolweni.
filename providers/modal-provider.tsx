@@ -1,6 +1,7 @@
 "use client";
 
 import MenuModal from "@/app/components/menu-modal";
+
 import React, { useState, useEffect } from "react";
 
 const ModalProvider = () => {
