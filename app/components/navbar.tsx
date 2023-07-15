@@ -7,12 +7,14 @@ import { useMenuModal } from "@/hooks/use-menu-modal";
 import MenuModal from "./menu-modal";
 
 const NavBar = () => {
-  const { onOpen } = useMenuModal();
+  const onOpen = useMenuModal((state) => state.onOpen);
+  const onClose = useMenuModal((state) => state.onClose);
+  const isModalOpen = useMenuModal((state) => state.isModalOpen);
   return (
     <nav className="w-full px-10 py-6 flex justify-between items-center ">
       <div className="flex gap-8">
         <AlignJustify onClick={onOpen} />
-        <MenuModal isModalOpen />
+        {isModalOpen && <MenuModal isModalOpen onClose={onClose} />}
         <Image src="/uber-logo.svg" alt="logo" width={120} height={120} />
       </div>
       <div className="flex gap-3 ">
