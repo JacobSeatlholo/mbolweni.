@@ -51,8 +51,8 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
         </DialogHeader>
 
         <div className="flex relative">
-          <div className="absolute flex -bottom-20  items-start">
-            <Image src="/Uber-Eats.svg" alt="logo" width={100} height={80} />
+          <div className="absolute flex -bottom-20  items-start gap-2">
+            <Image src="/Uber-sm.png" alt="logo" width={60} height={60} />
             <p className="text-xs font-semibold">
               There's more to love in <br />
               the app.

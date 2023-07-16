@@ -1,7 +1,10 @@
+import Link from "next/link";
+
 const SubNavbar = () => {
   return (
     <nav className="fixed top-0 left-0 mx-auto bg-black w-full px-10 py-6">
-      <h1 className="text-3xl font-extrabold">
+      <Link href="/">
+        {" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="121"
@@ -17,7 +20,7 @@ const SubNavbar = () => {
             d="M8 17.4c2.7 0 4.7-2 4.7-5.1V.3h3v19.4h-3v-1.8a7 7 0 01-5 2.1c-4.2 0-7.4-3-7.4-7.6V.4h3v11.9c0 3 2 5.1 4.7 5.1zm9.8 2.3h2.7v-1.8A7.3 7.3 0 0033 12.7c0-4.1-3.2-7.4-7.3-7.4a7 7 0 00-5 2v-7h-2.8v19.4zm7.6-2.2a4.9 4.9 0 01-4.9-4.9 4.9 4.9 0 119.7 0c0 2.8-2.2 5-4.8 5zm16-12.2a7.2 7.2 0 00-7.3 7.3c0 4.2 3.2 7.4 7.5 7.4 2.5 0 4.6-1.2 6-3l-2-1.5c-1 1.4-2.4 2-4 2a4.7 4.7 0 01-4.7-4h11.5v-.9c0-4.2-3-7.3-7-7.3zm-4.4 6a4.4 4.4 0 014.3-3.6c2 0 3.8 1.5 4.2 3.6H37zm20-3.2V5.5h-1c-1.5 0-2.6.7-3.3 1.8V5.6h-2.8v14h2.8v-8c0-2.1 1.3-3.5 3.1-3.5H57z"
           ></path>
         </svg>
-      </h1>
+      </Link>
     </nav>
   );
 };
