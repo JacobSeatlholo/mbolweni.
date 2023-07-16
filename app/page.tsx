@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
@@ -21,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-background bg-cover bg-no-repeat">
+    <main className="bg-background bg-cover bg-no-repeat bg-center">
       <NavBar isTopOfPage={isTopOfPage} />
       <HeroSection />
       <Footer />

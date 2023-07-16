@@ -23,13 +23,13 @@ const NavBar = ({ isTopOfPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navbarBackground}fixed top-0 z-30 w-full px-10 py-6 flex justify-between items-center`}
+        className={`${navbarBackground} fixed top-0 z-30 w-full px-10 py-6 flex justify-between items-center`}
       >
         <div className="flex gap-8">
           <GiHamburgerMenu size={20} onClick={onOpen} />
           {isModalOpen && <MenuModal isModalOpen onClose={onClose} />}
           <Link href="/">
-            <Image src="/uber-logo.svg" alt="logo" width={120} height={120} />
+            <Image src="/uber-logo.svg" alt="logo" width={140} height={120} />
           </Link>
         </div>
         <div className="flex gap-3">
