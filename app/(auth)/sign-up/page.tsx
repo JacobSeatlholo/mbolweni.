@@ -1,9 +1,9 @@
-import SubNavbar from "@/app/components/sub-navbar";
+import SharedContent from "@/app/components/shared-content";
 
 export default function Page() {
   return (
-    <main>
-      <SubNavbar />
-    </main>
+    <>
+      <SharedContent />
+    </>
   );
 }
