@@ -26,18 +26,18 @@ export default function BusinessCard() {
         <div className="flex justify-between">
           {business.map((option, id) => (
             <div className="" key={id}>
-              <Image
-                src={option.img}
-                width={400}
-                height={400}
-                alt="image"
-                loading="lazy"
-              />
-              <h1 className="text-xl font-bold font-montserrat mt-3">
-                {option.title}
-              </h1>
-              <Link href="/" className="text-sm underline">
-                {option.link}
+              <Link href="/">
+                <Image
+                  src={option.img}
+                  width={400}
+                  height={400}
+                  alt="image"
+                  loading="lazy"
+                />
+                <h1 className="text-xl font-bold font-montserrat mt-3">
+                  {option.title}
+                </h1>
+                <p className="text-sm underline">{option.link}</p>
               </Link>
             </div>
           ))}
