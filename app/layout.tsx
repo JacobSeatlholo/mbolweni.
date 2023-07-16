@@ -1,8 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
 import ModalProvider from "@/providers/modal-provider";
 
 export const metadata: Metadata = {
@@ -19,9 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ModalProvider />
-        <NavBar />
+
         {children}
-        <Footer />
       </body>
     </html>
   );

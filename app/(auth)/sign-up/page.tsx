@@ -1,11 +1,9 @@
-"use client";
-
 import SubNavbar from "@/app/components/sub-navbar";
 
 export default function Page() {
   return (
-    <div>
+    <main>
       <SubNavbar />
-    </div>
+    </main>
   );
 }

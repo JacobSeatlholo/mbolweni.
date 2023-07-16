@@ -8,5 +8,4 @@ html,
 body,
 :root {
   height: 100%;
-  @apply bg-background bg-cover bg-no-repeat;
 }

@@ -23,13 +23,13 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="flex gap-3">
-        <Link href="/login">
+        <Link href="/sign-in">
           <Button className="bg-white drop-shadow-sm  text-black hover:bg-slate-200 flex items-center space-x-1 ">
             <BsFillPersonFill size={20} />
             <span> Log in</span>
           </Button>
         </Link>
-        <Link href="signup">
+        <Link href="sign-up">
           <Button className="hover:bg-slate-700">Sign up</Button>
         </Link>
       </div>

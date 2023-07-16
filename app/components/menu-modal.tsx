@@ -32,13 +32,13 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
         <DialogHeader className="space-y-2">
           <Button
             type="button"
-            onClick={() => router.push("/signup")}
+            onClick={() => router.push("/sign-up")}
             className="w-[200px] rounded-[6px] hover:bg-slate-800"
           >
             Sign up
           </Button>
 
-          <Link href="/login">
+          <Link href="/sign-in">
             <Button className="w-[200px] rounded-[6px] bg-[#eee] text-black hover:bg-[#e2e2e2] font-semibold">
               Log in
             </Button>
