@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import ModalProvider from "@/providers/modal-provider";
 
 export const metadata: Metadata = {
-  title: "Uber Eats",
+  title: "Uber Eats | Food Delivery and Takeout",
   description: "Uber Eats | Food Delivery and Takeout made with Next.js",
 };
 

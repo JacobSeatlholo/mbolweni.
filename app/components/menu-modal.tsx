@@ -3,22 +3,24 @@
 import Button from "@/components/ui/button";
 import {
   Dialog,
-  DialogTrigger,
   DialogContent,
   DialogHeader,
   DialogFooter,
-  DialogDescription,
 } from "@/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { AiFillApple } from "react-icons/ai";
 import { BiLogoAndroid } from "react-icons/bi";
+
 interface ModalProps {
   isModalOpen: boolean;
   onClose: () => void;
 }
 
 const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
+  const router = useRouter();
+
   const onChange = (open: boolean) => {
     if (!open) {
       onClose();
@@ -28,10 +30,19 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
     <Dialog open={isModalOpen} onOpenChange={onChange}>
       <DialogContent>
         <DialogHeader className="space-y-2">
-          <Button className="w-[200px] rounded-[6px]">Sign up</Button>
-          <Button className="w-[200px] rounded-[6px] bg-[#eee] text-black">
-            Log in
+          <Button
+            type="button"
+            onClick={() => router.push("/signup")}
+            className="w-[200px] rounded-[6px] hover:bg-slate-800"
+          >
+            Sign up
           </Button>
+
+          <Link href="/login">
+            <Button className="w-[200px] rounded-[6px] bg-[#eee] text-black hover:bg-[#e2e2e2] font-semibold">
+              Log in
+            </Button>
+          </Link>
           <div className="flex flex-col items-start space-y-3 pt-7 text-xs font-semibold">
             <Link href="#">Create a business account</Link>
             <Link href="#">Add your restaurant</Link>
@@ -54,17 +65,17 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
             <div className="flex gap-3 absolute bottom-0 left-0">
               <Button
                 type="submit"
-                className="bg-[#eee] rounded-[20px] text-black  w-30 h-10"
+                className="bg-[#eee] hover:bg-[#e2e2e2] rounded-[20px] text-black  w-30 h-8"
               >
-                <div className="flex justify-center items-center ">
+                <div className="flex justify-center items-center gap-2 ">
                   <AiFillApple /> <p className="text-sm">iPhone</p>
                 </div>
               </Button>
               <Button
                 type="submit"
-                className="bg-[#eee] rounded-[20px] text-black w-30 h-10"
+                className="bg-[#eee] rounded-[20px] hover:bg-[#e2e2e2] text-black w-30 h-8"
               >
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center gap-2">
                   <BiLogoAndroid /> <p className="text-sm">Android</p>
                 </div>
               </Button>

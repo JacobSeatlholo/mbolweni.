@@ -1,5 +1,6 @@
 import { Input } from "@/components/ui/input";
-import { MapPin, Clock3, CalendarCheck } from "lucide-react";
+import { HiLocationMarker, HiClock } from "react-icons/hi";
+import { FaCalendarDay } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 import {
   Select,
@@ -19,7 +20,7 @@ const HeroSection = () => {
         </h1>
         <div className="flex space-x-2 py-4 w-full">
           <div className="flex-1 w-[500px] flex bg-white justify-center items-center hover:border-b-2 hover:border-black  shadow-sm">
-            <MapPin className="ml-3" />
+            <HiLocationMarker size={20} className="ml-3" />
             <Input type="text" placeholder="Enter delivery address" />
           </div>
           {/* drop down */}
@@ -36,16 +37,16 @@ const HeroSection = () => {
               <SelectContent>
                 <SelectItem value="light">
                   <div className="flex space-x-2">
-                    <Clock3 size={20} />
-                    <p className="pl-1 min-w-fit text-[14px] font-semibold">
+                    <HiClock size={20} />
+                    <p className="pl-1 min-w-fit text-[14px] font-semibold ">
                       Deliver now
                     </p>
                   </div>
                 </SelectItem>
 
                 <SelectItem value="dark">
-                  <div className="flex ">
-                    <CalendarCheck size={20} />
+                  <div className="flex">
+                    <FaCalendarDay size={20} />
                     <p className="pl-1 min-w-fit text-[14px] font-semibold">
                       Schedule for later
                     </p>
@@ -60,6 +61,10 @@ const HeroSection = () => {
             Find Food
           </Button>
         </div>
+        <p className="text-sm">
+          {" "}
+          <span className="underline">Sign In</span> for your recent addressed
+        </p>
       </div>
     </div>
   );
