@@ -9,3 +9,7 @@ body,
 :root {
   height: 100%;
 }
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}

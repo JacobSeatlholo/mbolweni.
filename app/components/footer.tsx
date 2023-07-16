@@ -6,6 +6,7 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { Languages } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-white py-20 px-10 text-[#696969]">
@@ -32,21 +33,43 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col text-sm space-y-3">
-            <Link href="#">Get Help</Link>
-            <Link href="#">Buy gift cards</Link>
-            <Link href="#">Add your restaurant</Link>
-            <Link href="#">Sign up to deliver</Link>
-            <Link href="#">Create a business account</Link>
-            <Link href="#">Promotions</Link>
+          <div className="flex flex-col text-sm space-y-3 ">
+            <Link href="#" className="hover:underline">
+              Get Help
+            </Link>
+            <Link href="#" className="hover:underline">
+              Buy gift cards
+            </Link>
+            <Link href="#" className="hover:underline">
+              Add your restaurant
+            </Link>
+            <Link href="#" className="hover:underline">
+              Sign up to deliver
+            </Link>
+            <Link href="#" className="hover:underline">
+              Create a business account
+            </Link>
+            <Link href="#" className="hover:underline">
+              Promotions
+            </Link>
           </div>
 
           <div className="flex flex-col text-sm space-y-3">
-            <Link href="#">Restaurant near me</Link>
-            <Link href="#">View all cities</Link>
-            <Link href="#">View all countries</Link>
-            <Link href="#">Pickup near me</Link>
-            <Link href="#">About Uber Eats</Link>
+            <Link href="#" className="hover:underline">
+              Restaurant near me
+            </Link>
+            <Link href="#" className="hover:underline">
+              View all cities
+            </Link>
+            <Link href="#" className="hover:underline">
+              View all countries
+            </Link>
+            <Link href="#" className="hover:underline">
+              Pickup near me
+            </Link>
+            <Link href="#" className="hover:underline">
+              About Uber Eats
+            </Link>
 
             <div className="flex gap-2">
               <Languages />

@@ -10,6 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Button from "@/components/ui/button";
+import BusinessCard from "./business-card";
 
 const HeroSection = () => {
   return (
@@ -62,7 +63,6 @@ const HeroSection = () => {
           </Button>
         </div>
         <p className="text-sm">
-          {" "}
           <span className="underline">Sign In</span> for your recent addressed
         </p>
       </div>

@@ -1,6 +1,4 @@
 
-
-
 export default async function HomePageLayout({
   children,
 }: {
