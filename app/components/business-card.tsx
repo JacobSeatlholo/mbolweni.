@@ -22,10 +22,10 @@ const business = [
 export default function BusinessCard() {
   return (
     <main className="bg-white py-20">
-      <div className="px-10 ">
-        <div className="flex justify-between">
+      <div className="px-10 flex flex-col">
+        <div className="md:flex justify-between ">
           {business.map((option, id) => (
-            <div className="" key={id}>
+            <div className="mb-10" key={id}>
               <Link href="/">
                 <Image
                   src={option.img}
