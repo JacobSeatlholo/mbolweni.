@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import Button from "@/components/ui/button";
 import BusinessCard from "./business-card";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -62,9 +63,12 @@ const HeroSection = () => {
             Find Food
           </Button>
         </div>
-        <p className="text-sm">
-          <span className="underline">Sign In</span> for your recent addressed
-        </p>
+
+        <Link href="/sign-in">
+          <p className="text-sm">
+            <span className="underline">Sign In</span> for your recent addressed
+          </p>
+        </Link>
       </div>
     </div>
   );
