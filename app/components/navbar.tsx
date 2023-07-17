@@ -33,7 +33,7 @@ const NavBar = ({ isTopOfPage }: Props) => {
             <Image src="/uber-logo.svg" alt="logo" width={140} height={120} />
           </Link>
         </div>
-        <div className="flex gap-3">
+        <div className=" gap-3 invisible md:visible md:flex ">
           <Link href="/sign-in">
             <Button className="bg-white drop-shadow-sm  text-black hover:bg-slate-200 flex items-center space-x-1 ">
               <BsFillPersonFill size={20} />
