@@ -23,7 +23,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-background bg-cover bg-no-repeat bg-center">
+    <main className="bg-background bg-cover bg-no-repeat bg-center bg-fixed">
       <NavBar isTopOfPage={isTopOfPage} />
       <HeroSection />
       <BusinessCard />
