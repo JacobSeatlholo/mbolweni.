@@ -24,7 +24,8 @@ const ModalProvider: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
 
   return (
     <>
-      <MenuModal isModalOpen onClose={onClose} />
+      {/* @ts-ignore */}
+      <MenuModal />
     </>
   );
 };
