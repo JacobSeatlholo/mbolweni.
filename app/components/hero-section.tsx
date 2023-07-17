@@ -10,7 +10,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Button from "@/components/ui/button";
-import BusinessCard from "./business-card";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -20,16 +19,16 @@ const HeroSection = () => {
         <h1 className="text-[2.6rem] leading-loose font-semibold font-montserrat">
           Order food to your door
         </h1>
-        <div className="flex space-x-2 py-4 w-full">
-          <div className="flex-1 w-[500px] flex bg-white justify-center items-center hover:border-b-2 hover:border-black  shadow-sm">
+        <div className="flex md:space-x-2 py-4 md:w-full md:flex-row flex-col  items-start space-y-2">
+          <div className="flex-1  md:w-[500px]  flex bg-white justify-center items-center hover:border-b-2 hover:border-black  shadow-sm">
             <HiLocationMarker size={20} className="ml-3" />
             <Input type="text" placeholder="Enter delivery address" />
           </div>
           {/* drop down */}
-          <div>
+          <div className="">
             <Select>
               <SelectTrigger className="w-[190px] h-[55px]">
-                <div className="flex space-x-2">
+                <div className="flex space-x-2 ">
                   <SelectValue
                     placeholder=" Deliver now"
                     className="font-semibold"

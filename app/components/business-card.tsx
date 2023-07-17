@@ -21,7 +21,7 @@ const business = [
 
 export default function BusinessCard() {
   return (
-    <main className="bg-white py-20">
+    <main className="bg-white md:py-20 py-10">
       <div className="px-10 flex flex-col">
         <div className="md:flex justify-between ">
           {business.map((option, id) => (
