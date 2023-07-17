@@ -26,11 +26,7 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
 
   const useModal = useMenuModal();
 
-  // const onChange = (open: boolean) => {
-  //   if (!open) {
-  //     onClose();
-  //   }
-  // };
+
   return (
     <Dialog open={useModal.isModalOpen} onOpenChange={useModal.onClose}>
       <DialogContent>
@@ -78,7 +74,7 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
               </Button>
               <Button
                 type="submit"
-                className="bg-[#eee] rounded-[20px] hover:bg-[#e2e2e2] text-black w-30 h-8"
+                className="bg-[#eee] hover:bg-[#e2e2e2] rounded-[20px] text-black  w-30 h-8"
               >
                 <div className="flex justify-center items-center gap-2">
                   <BiLogoAndroid /> <p className="text-sm">Android</p>
