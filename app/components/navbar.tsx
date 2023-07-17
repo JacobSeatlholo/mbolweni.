@@ -8,6 +8,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { useMenuModal } from "@/hooks/use-menu-modal";
 import MenuModal from "./menu-modal";
 import Link from "next/link";
+import { useEffect } from "react";
 
 type Props = {
   isTopOfPage: boolean;

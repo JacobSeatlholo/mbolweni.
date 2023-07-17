@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 import Button from "@/components/ui/button";
 import {
   Dialog,
@@ -8,10 +11,10 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+
 import { AiFillApple } from "react-icons/ai";
 import { BiLogoAndroid } from "react-icons/bi";
+import { useMenuModal } from "@/hooks/use-menu-modal";
 
 interface ModalProps {
   isModalOpen: boolean;
@@ -21,13 +24,15 @@ interface ModalProps {
 const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
   const router = useRouter();
 
-  const onChange = (open: boolean) => {
-    if (!open) {
-      onClose();
-    }
-  };
+  const useModal = useMenuModal();
+
+  // const onChange = (open: boolean) => {
+  //   if (!open) {
+  //     onClose();
+  //   }
+  // };
   return (
-    <Dialog open={isModalOpen} onOpenChange={onChange}>
+    <Dialog open={useModal.isModalOpen} onOpenChange={useModal.onClose}>
       <DialogContent>
         <DialogHeader className="space-y-2">
           <Button
