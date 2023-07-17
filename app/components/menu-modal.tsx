@@ -26,11 +26,10 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
 
   const useModal = useMenuModal();
 
-
   return (
     <Dialog open={useModal.isModalOpen} onOpenChange={useModal.onClose}>
       <DialogContent>
-        <DialogHeader className="space-y-2">
+        <DialogHeader className="space-y-2 flex items-center">
           <Button
             type="button"
             onClick={() => router.push("/sign-up")}
