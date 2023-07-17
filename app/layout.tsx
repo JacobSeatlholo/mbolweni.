@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* @ts-ignore */}
         <ModalProvider />
         {children}
       </body>
