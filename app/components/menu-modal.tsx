@@ -52,7 +52,7 @@ const MenuModal: React.FC<ModalProps> = ({ isModalOpen, onClose }) => {
 
         <div className="flex relative">
           <div className="absolute flex -bottom-20  items-start gap-2">
-            <Image src="/Uber-sm.png" alt="logo" width={60} height={60} />
+            <Image src="/uber-sm.png" alt="logo" width={60} height={60} />
             <p className="text-xs font-semibold">
               There's more to love in <br />
               the app.
