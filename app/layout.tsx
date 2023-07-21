@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-
 import ModalProvider from "@/providers/modal-provider";
 
 export const metadata: Metadata = {
