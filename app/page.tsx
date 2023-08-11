@@ -8,6 +8,7 @@ import BusinessCard from "./components/business-card";
 
 export default function Home() {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+  const [showInput, setShowInput] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,9 +23,22 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = 100;
+      setShowInput(window.scrollY > offset);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setShowInput]);
+
   return (
     <main className="bg-background bg-cover bg-no-repeat bg-center bg-fixed">
-      <NavBar isTopOfPage={isTopOfPage} />
+      <NavBar isTopOfPage={isTopOfPage} showInput={showInput} />
       <HeroSection />
       <BusinessCard />
       <Footer />

@@ -6,19 +6,19 @@ import Button from "@/components/ui/button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsFillPersonFill } from "react-icons/bs";
 import { useMenuModal } from "@/hooks/use-menu-modal";
-
+import { Input } from "@/components/ui/input";
 import MenuModal from "./menu-modal";
 import Link from "next/link";
 
 type Props = {
   isTopOfPage: boolean;
+  showInput: boolean;
 };
 
-const NavBar = ({ isTopOfPage }: Props) => {
+const NavBar = ({ isTopOfPage, showInput }: Props) => {
   const onOpen = useMenuModal((state) => state.onOpen);
   const onClose = useMenuModal((state) => state.onClose);
   const isModalOpen = useMenuModal((state) => state.isModalOpen);
-
 
   const navbarBackground = isTopOfPage ? "" : "bg-white drop-shadow";
 
